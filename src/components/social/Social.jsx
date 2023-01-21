@@ -1,5 +1,5 @@
 import React from "react";
-import { socialMedias } from "../../data/socialMedias";
+import { socialMedias } from "../../data/socialMedias.jsx";
 
 const Social = () => {
   return (

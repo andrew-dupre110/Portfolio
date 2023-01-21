@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { menu } from "../../data/headerMenu";
+import { menu } from "../../data/headerMenu.jsx";
 import "./header.css";
 
 const Header = () => {
