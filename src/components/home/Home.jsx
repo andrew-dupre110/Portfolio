@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Social from "../social/social";
+import Social from "../social/Social";
 import Data from "./data/Data";
 import ScrollDown from "./scroll/ScollDown";
 
