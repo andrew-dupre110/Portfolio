@@ -6,7 +6,7 @@ export const socialMedias = [
   },
   {
     link: "https://github.com/andrew-dupre110",
-    icon: <i className="uil uil-github-alt"></i>,
+    icon: <i className="uil uil-github"></i>,
     label: "github",
   },
   {
