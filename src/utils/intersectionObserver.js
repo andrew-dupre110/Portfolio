@@ -22,4 +22,4 @@ const useIsInViewport = (ref) => {
   return isIntersecting;
 };
 
-module.exports = { useIsInViewport };
+export default useIsInViewport;
