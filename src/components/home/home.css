@@ -147,8 +147,8 @@
   }
 }
 
-/* For large devices */
-@media screen and (max-width: 992px) {
+/* For medium devices */
+@media screen and (max-width: 768) {
   .home_content {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;
@@ -184,8 +184,8 @@
     margin-left: 7.5rem;
   }
 }
-/* For medium devices */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 576) {
   .home_content {
     grid-template-columns: 0.5fr 3fr;
     padding: top 3.5rem;
