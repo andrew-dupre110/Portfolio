@@ -78,6 +78,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 
 html {
@@ -125,8 +126,10 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  height: 90vh;
-  padding: 6rem 0 2rem;
+  margin-top: 20vh;
+  height: 80vh;
+  padding: 0rem 0 2rem;
+  scroll-snap-align: center;
 }
 
 .section__title {
@@ -147,7 +150,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 968px;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -196,6 +199,15 @@ img {
     width: 22px;
     height: 22px;
   }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 0rem 0 4rem;
+    margin-bottom: 10vh;
+  }
 }
 
 /* For medium devices */
@@ -204,8 +216,14 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
 
+  .container {
+    max-width: 100%;
+  }
+
   .section {
     padding: 2rem 0 4rem;
+    margin-top: 0vh;
+    height: 100%;
   }
 
   .section__subtitle {

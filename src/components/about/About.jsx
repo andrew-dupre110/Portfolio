@@ -1,12 +1,14 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/profile.jpg";
-import Cv from "../../assets/John-Cv.pdf";
+import Cv from "../../assets/Andrew-Dupre_Cv.pdf";
 import Info from "./Info";
 
-const About = () => {
+const About = (props) => {
+  const { refProp } = props;
+
   return (
-    <section className="about section" id="about">
+    <section ref={refProp} className="about section" id="about">
       <h2 className="section__title">About me</h2>
       <span className="section__subtitle">My introduction</span>
 

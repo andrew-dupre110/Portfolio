@@ -2,8 +2,23 @@ import React, { useState } from "react";
 import { menu } from "../../data/headerMenu.jsx";
 import "./header.css";
 
-const Header = () => {
+const Header = (props) => {
+  const { executeScroll, activeLink, homeRef, AboutRef } = props;
   const [toggle, setToggle] = useState(false);
+
+  const handleClickedRef = (linkTo) => {
+    switch (linkTo) {
+      case "#home":
+        executeScroll(homeRef);
+        break;
+      case "#about":
+        executeScroll(AboutRef);
+        break;
+
+      default:
+        break;
+    }
+  };
 
   return (
     <header className="header">
@@ -19,7 +34,10 @@ const Header = () => {
                 <li className="nav_item">
                   <a
                     href={menuItem.link}
-                    className={`nav_link ${menuItem.isActive && "active_link"}`}
+                    className={`nav_link ${
+                      activeLink == menuItem.link && "active__link"
+                    }`}
+                    onClick={() => handleClickedRef(menuItem.link)}
                   >
                     {menuItem.icon}
                     {menuItem.label}

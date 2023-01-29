@@ -4,9 +4,10 @@ import Social from "../social/Social.jsx";
 import Data from "./data/Data.jsx";
 import ScrollDown from "./scroll/ScollDown.jsx";
 
-const Home = () => {
+const Home = (props) => {
+  const { refProp } = props;
   return (
-    <section className="home section" id="home">
+    <section ref={refProp} className="home section" id="home">
       <div className="home_container container grid">
         <div className="home_content grid">
           <Social />

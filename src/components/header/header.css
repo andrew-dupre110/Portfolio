@@ -43,9 +43,30 @@
 }
 
 /* Active lnk */
-.active_link,
+.active__link,
 .nav_link:hover {
+  scale: 1.2;
   color: var(--title-color-dark);
+  transition: 0.3s;
+}
+
+.active__link::after {
+  content: "";
+  background-color: var(--title-color-dark);
+  position: relative;
+  bottom: -30%;
+  opacity: 0;
+  width: 100%;
+  height: 2px;
+  animation: afterBar 1s ease forwards;
+}
+
+/* ======== Animations ====== */
+@keyframes afterBar {
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
 }
 
 /* ======== Breakpoints ====== */
@@ -109,6 +130,10 @@
   .nav_close,
   .nav_toggle {
     display: block;
+  }
+
+  .active__link::after {
+    width: 20%;
   }
 }
 
