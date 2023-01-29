@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-const { useIsInViewport } = require("./utils/intersectionObserver.js");
+import useIsInViewport from "./utils/intersectionObserver.js";
 import About from "./components/about/About.jsx";
 import Header from "./components/header/Header.jsx";
 import Home from "./components/home/Home.jsx";
