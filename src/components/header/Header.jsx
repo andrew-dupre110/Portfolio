@@ -3,7 +3,7 @@ import { menu } from "../../data/headerMenu.jsx";
 import "./header.css";
 
 const Header = (props) => {
-  const { executeScroll, activeLink, homeRef, AboutRef } = props;
+  const { executeScroll, activeLink, homeRef, AboutRef, skillsRef } = props;
   const [toggle, setToggle] = useState(false);
 
   const handleClickedRef = (linkTo) => {
@@ -14,7 +14,8 @@ const Header = (props) => {
       case "#about":
         executeScroll(AboutRef);
         break;
-
+      case "#skills":
+        executeScroll(skillsRef);
       default:
         break;
     }
