@@ -23,15 +23,15 @@ function App() {
 
   useEffect(() => {
     if (homeIntersecting) {
-      setActiveLink("#home");
+      return setActiveLink("#home");
     }
     if (aboutIntersecting) {
-      setActiveLink("#about");
+      return setActiveLink("#about");
     }
     if (skillsIntersecting) {
-      setActiveLink("#skills");
+      return setActiveLink("#skills");
     }
-  }, [homeIntersecting, aboutIntersecting]);
+  }, [homeIntersecting, aboutIntersecting, skillsIntersecting]);
 
   return (
     <div>

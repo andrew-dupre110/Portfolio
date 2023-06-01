@@ -6,12 +6,13 @@ import ScrollDown from "./scroll/ScollDown.jsx";
 
 const Home = (props) => {
   const { refProp } = props;
+
   return (
-    <section ref={refProp} className="home section" id="home">
+    <section className="home section" id="home">
       <div className="home_container container grid">
         <div className="home_content grid">
           <Social />
-          <div className="home_img"></div>
+          <div ref={refProp} className="home_img"></div>
           <Data />
         </div>
         <ScrollDown />

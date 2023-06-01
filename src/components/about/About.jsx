@@ -8,7 +8,7 @@ const About = (props) => {
   const { refProp } = props;
 
   return (
-    <section ref={refProp} className="about section" id="about">
+    <section className="about section" id="about">
       <h2 className="section__title">About me</h2>
       <span className="section__subtitle">My introduction</span>
 
@@ -23,7 +23,12 @@ const About = (props) => {
             interface while being able to fullfill the functional requirements.
           </p>
 
-          <a download="" href={Cv} className="button button--flex">
+          <a
+            ref={refProp}
+            download=""
+            href={Cv}
+            className="button button--flex"
+          >
             Download CV
             <svg
               className="button__icon"

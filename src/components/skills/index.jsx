@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./skills.css";
 import { skills } from "../../data/skills";
 
@@ -6,11 +6,11 @@ const index = (props) => {
   const { refProp } = props;
 
   return (
-    <section ref={refProp} className="section" id="skills">
+    <section className="section skills" id="skills">
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">Tech stack</span>
 
-      <div className="skills__container container grid">
+      <div ref={refProp} className="skills__container container grid">
         {skills.map((skill, idx) => (
           <div key={idx} className="skill__wrapper">
             <div className="container flex__container">

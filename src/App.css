@@ -230,6 +230,13 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  .section {
+    padding: 2rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: 2rem;
+  }
 }
 
 /* For small devices */
@@ -241,5 +248,9 @@ img {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .section {
+    padding: 2rem;
   }
 }
