@@ -45,10 +45,9 @@
   margin-bottom: var(--mb-0-25);
 }
 
-.home_hand {
-  width: 38px;
-  height: 38px;
-  margin-left: 0.4rem;
+.home_title > svg {
+  margin-left: 1rem;
+  animation: wave 3s ease-in-out infinite;
 }
 
 .home_subtitle {
@@ -126,6 +125,18 @@
   }
   30% {
     transform: translateY(3.75rem);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 

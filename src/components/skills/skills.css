@@ -55,12 +55,17 @@
 @media screen and (max-width: 600px) {
   .section {
     overflow-y: scroll;
-    padding: 0 1rem;
+  }
+
+  .skills {
+    height: 120vh;
+    scroll-snap-align: start;
   }
 
   .skills__container {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+    width: 100%;
   }
 
   .skill__wrapper {
